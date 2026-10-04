@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;   /* el padding y el borde no agrandan los anchos */
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;        /* ocupa al menos toda la pantalla */
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(240, 234, 227);
+}
+
+main {
+    flex: 1;                  /* empuja el footer hasta abajo cuando hay poco contenido */
+}
+
+#principal {
+    display: flex;
+    flex-wrap: wrap;          /* permite que el título quede arriba */
+    min-height: 680px;        /* antes: height: 680px */
+}
+
+#titulo {
+    text-align: center;
+    width: 80%;              /* el título ocupa su propia fila */
+    margin: 1px;
+    color: #63433c;
+}
+
+#section-1 {
+    width: 80%;
+    padding: 10px;
+}
+
+#menu{
+
+    text-align: center;
+    width: 20%;
+    background-color: blanchedalmond;
+    border-radius: 5px;
+
+}
+
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.opmnu {
+    list-style: none;
+    margin: 5px 0;    
+    padding: 1vh;
+    text-align: center;
+    background-color: #A56F63;
+    border-radius: 5px;
+    width: 80%;       
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 80px;         /* antes: height: 10% */
+    background-color: #A56F63;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.gpo{
+
+    background-color: #D99B7F;
+    margin: 3vh;
+    padding: 2vh;
+    text-align: right;
+    border-radius: 5px;
+
+}
+
+.nm{
+
+    background-color: #D99B7F;
+    margin: 3vh;
+    padding: 2vh;
+    margin-right: auto;
+    border-radius: 5px;
+
+}
+
+.opmnu a {
+    display: block;          /* todo el botón es clicable, no solo el texto */
+    color: inherit;          /* quita el morado/azul */
+    text-decoration: none;   /* quita el subrayado */
+}
+
+.opmnu:hover {
+    background-color: #D99B7F;   /* mismo color de tu footer, como efecto al pasar el mouse */
+}
+
+form {
+    padding: 10px;
+}
+
+fieldset {
+    border: 2px solid #A56F63;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+legend {
+    background-color: #A56F63;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+
+label {
+    display: inline-block;
+    min-width: 140px;
+    margin: 4px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="number"],
+input[type="url"],
+select,
+textarea {
+    background-color: blanchedalmond;
+    border: 1px solid #A56F63;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+#boton {
+    background-color: #A56F63;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 1vh 3vh;
+    cursor: pointer;
+}
+
+#boton:hover {
+    background-color: #D99B7F;
+}

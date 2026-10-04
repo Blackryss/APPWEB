@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css"/>
+    <title>Corredor</title>
+</head>
+<body>
+
+    <main>
+        <section id="principal">
+        <h1 id="titulo">Corredor</h1>
+
+            <section id="section-1">
+                <section class="secundario">
+                    <article class="articulo">
+                  <form name="datos_corredor" method="post" action="#" enctype="multipart/form-data">
+                    <fieldset>
+                        <legend>Datos de Registro:</legend>
+                        <article id="registro">
+                            <label>Fecha de registro:</label>
+                            <input type="date" id="fecha"/><br>
+                        </article>
+                    </fieldset>
+                    <fieldset id="datos_user">
+                        <legend>Datos del corredor:</legend>
+                        <article id="nombre_completo">
+                            <article>
+                                <label>Nombre: </label>
+                                <input type="text" id="nombre"/><br>
+                            </article>
+                            <article>
+                                <label>Apellido Paterno: </label>
+                                <input type="text" id="apellidoP"/><br>
+                            </article>
+                            <article>
+                                <label>Apellido Materno:</label>
+                                <input type="text" id="apellidoM"/><br>
+                            </article>
+                        </article>
+                        <article id="otros_datos">
+                            <article id="tg">
+                                <article id="tipo_sangre">
+                                    <label>Tipo de Sangre:</label>
+                                    <input type="radio" name="TipoS" value="O+"/>O+
+                                    <input type="radio" name="TipoS" value="A"/>A
+                                    <input type="radio" name="TipoS" value="B"/>B
+                                    <input type="radio" name="TipoS" value="AB"/>AB
+                                </article>
+                                <article id="genero">
+                                    <label> Género:</label>
+                                    <input type="radio" name="gnr" value="Fem"/>Femenino
+                                    <input type="radio" name="gnr" value="Mas"/>Masculino
+                                </article>
+                            </article>
+                            <article>
+                                <label>Fecha de nacimiento: </label>
+                                <input type="date" id="nacimiento"/><br>
+                            </article>
+                            <article>
+                                <label>Nacionalidad: </label>
+                                <select id="nacionalidad">
+                                    <option value=""></option>
+                                    <option value="MX">México</option>
+                                    <option value="IT">Italia</option>
+                                    <option value="GB">Reino Unido</option>
+                                    <option value="DE">Alemania</option>
+                                    <option value="NL">Países Bajos</option>
+                                    <option value="ES">España</option>
+                                </select><br>
+                            </article>
+                            <article>
+                                <label>Número de corredor: </label>
+                                <input type="number" id="numero" min="0" max="99"/><br>
+                            </article>
+                            <article>
+                                <label>Estatura (cm): </label>
+                                <input type="number" id="estatura" min="100" max="250"/><br>
+                            </article>
+                            <article>
+                                <label>Foto:</label>
+                                <input type="file" id="imagen" /><br>
+                            </article>
+                        </article>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Datos de contacto</legend>
+                        <article>
+                            <label>Email: </label>
+                            <input type="email" id="correo" required placeholder="a@mail.com"/><br>
+                        </article>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Generalidades </legend>
+                        <article>
+                            <label>Color favorito: </label>
+                            <input type="color" id="colorf"/>
+                        </article>
+                        <article>
+                            <label>Comentarios: </label>
+                            <textarea cols="50" rows="10" id="comms"></textarea>
+                        </article>
+                    </fieldset>
+                    <button type="button" id="boton" onclick="mi_metodoCorredor()">Registrar</button>
+                  </form>
+                    </article>
+                </section>
+            </section>
+
+            <aside id="menu">
+                <h3>MENU</h3>
+                    <ol>
+                        <li class="opmnu"><a href="home.html">Home</a></li>
+                        <li class="opmnu"><a href="autos.html">Autos</a></li>
+                        <li class="opmnu"><a href="escuderia.html">Escudería</a></li>
+                        <li class="opmnu"><a href="corredor.html">Corredor</a></li>
+                        <li class="opmnu"><a href="relaciones.html">Relaciones</a></li>
+                    </ol>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <article class="nm">Donovan Alexis Ruiz Macias</article>
+        <article class="gpo">LDSM405</article>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

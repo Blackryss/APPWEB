@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css"/>
+    <title>Escudería</title>
+</head>
+<body>
+
+    <main>
+        <section id="principal">
+        <h1 id="titulo">Escudería</h1>
+
+            <section id="section-1">
+                <section class="secundario">
+                    <article class="articulo">
+                  <form name="datos_escuderia" method="post" action="#" enctype="multipart/form-data">
+                    <fieldset>
+                        <legend>Datos de Registro:</legend>
+                        <article id="registro">
+                            <label>Fecha de fundación:</label>
+                            <input type="date" id="fecha"/><br>
+                        </article>
+                    </fieldset>
+                    <fieldset id="datos_escuderia">
+                        <legend>Datos de la escudería:</legend>
+                        <article id="identificacion">
+                            <article>
+                                <label>Nombre: </label>
+                                <input type="text" id="nombre"/><br>
+                            </article>
+                            <article>
+                                <label>Director: </label>
+                                <input type="text" id="director"/><br>
+                            </article>
+                            <article>
+                                <label>Sede: </label>
+                                <input type="text" id="sede"/><br>
+                            </article>
+                        </article>
+                        <article id="otros_datos">
+                            <article>
+                                <label>País: </label>
+                                <select id="pais">
+                                    <option value=""></option>
+                                    <option value="MX">México</option>
+                                    <option value="IT">Italia</option>
+                                    <option value="GB">Reino Unido</option>
+                                    <option value="DE">Alemania</option>
+                                    <option value="NL">Países Bajos</option>
+                                    <option value="ES">España</option>
+                                </select><br>
+                            </article>
+                            <article>
+                                <label>Campeonatos ganados: </label>
+                                <input type="number" id="campeonatos" min="0"/><br>
+                            </article>
+                            <article id="motor">
+                                <label>Motor:</label>
+                                <input type="radio" name="mot" value="FER"/>Ferrari
+                                <input type="radio" name="mot" value="MER"/>Mercedes
+                                <input type="radio" name="mot" value="HON"/>Honda
+                                <input type="radio" name="mot" value="REN"/>Renault
+                            </article>
+                            <article>
+                                <label>Logotipo:</label>
+                                <input type="file" id="imagen" /><br>
+                            </article>
+                        </article>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Datos de contacto</legend>
+                        <article>
+                            <label>Email: </label>
+                            <input type="email" id="correo" required autofocus placeholder="a@mail.com"/><br>
+                        </article>
+                        <article>
+                            <label>Sitio web: </label>
+                            <input type="url" id="web" placeholder="https://"/><br>
+                        </article>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Generalidades </legend>
+                        <article>
+                            <label>Color oficial: </label>
+                            <input type="color" id="colorf"/>
+                        </article>
+                        <article>
+                            <label>Descripción: </label>
+                            <textarea cols="50" rows="10" id="comms"></textarea>
+                        </article>
+                    </fieldset>
+                    <button type="button" id="boton" onclick="mi_metodoEscuderia()">Registrar</button>
+                  </form>
+                    </article>
+                </section>
+            </section>
+
+            <aside id="menu">
+                <h3>MENU</h3>
+                    <ol>
+                        <li class="opmnu"><a href="home.html">Home</a></li>
+                        <li class="opmnu"><a href="autos.html">Autos</a></li>
+                        <li class="opmnu"><a href="escuderia.html">Escudería</a></li>
+                        <li class="opmnu"><a href="corredor.html">Corredor</a></li>
+                        <li class="opmnu"><a href="relaciones.html">Relaciones</a></li>
+                    </ol>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <article class="nm">Donovan Alexis Ruiz Macias</article>
+        <article class="gpo">LDSM405</article>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
