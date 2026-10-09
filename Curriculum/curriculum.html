@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donovan Ruiz | Currículum</title>
+    <meta name="description" content="Currículum profesional de Donovan Ruiz, estudiante de desarrollo de software.">
+
+    <!-- Bootstrap 5.3.8 por CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Tipografías -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#menuPrincipal" data-bs-offset="100">
+
+    <!-- ===== NAVBAR FIJA ===== -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#inicio">Donovan Ruiz</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#trayectoria">Trayectoria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                        <li class="nav-item ms-lg-3">
+                            <button type="button" class="btn btn-rosa btn-sm" data-bs-toggle="modal" data-bs-target="#modalContacto">Escríbeme</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ===== HERO CON CARRUSEL ===== -->
+        <section id="inicio">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-7 aparecer">
+                        <p class="texto-rosa mb-3">Estudiante de desarrollo de software</p>
+                        <h1 class="hero-nombre mb-4">Donovan <span class="texto-rosa fst-italic">Ruiz</span></h1>
+                        <p class="fs-5 text-secondary mb-4">
+                            Programador multiplataforma con capacidades de creación de páginas web, mantenimiento con bases de datos y desarrollador de aplicaciones moviles.
+                        </p>
+                        <a href="#proyectos" class="btn btn-rosa me-2 mb-2">Ver mis proyectos</a>
+                        <button type="button" class="btn btn-contorno mb-2" data-bs-toggle="modal" data-bs-target="#modalContacto">Contactarme</button>
+                    </div>
+
+                    <div class="col-lg-5 aparecer retraso">
+                        <div id="carruselHero" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carruselHero" data-bs-slide-to="0" class="active"></button>
+                                <button type="button" data-bs-target="#carruselHero" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#carruselHero" data-bs-slide-to="2"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/slide1.svg" class="d-block w-100 img-fluid" alt="Círculos concéntricos en rosa sobre fondo negro">
+                                    <div class="carousel-caption">
+                                        <h3>Quién soy</h3>
+                                        <p>Gran colaborador.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/slide2.svg" class="d-block w-100 img-fluid" alt="Símbolo de código en rosa">
+                                    <div class="carousel-caption">
+                                        <h3>Qué hago</h3>
+                                        <p>Páginas web, manejo de bases de datos y aplicaciones moviles.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/slide3.svg" class="d-block w-100 img-fluid" alt="Cuadrícula de bloques rosas">
+                                    <div class="carousel-caption">
+                                        <h3>Cómo lo hago</h3>
+                                        <p>Con gran mentalidad y aporte en lo solicitado.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carruselHero" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carruselHero" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SOBRE MÍ ===== -->
+        <section id="sobre-mi" class="fondo-gris">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-md-5 col-lg-4">
+                        <!-- Cambia img/foto.svg por tu foto (por ejemplo img/foto.jpg) -->
+                        <img src="img/pfp.jpg" class="img-fluid foto-perfil w-100" alt="Foto de Donovan Ruiz">
+                    </div>
+                    <div class="col-md-7 col-lg-8">
+                        <h2 class="display-4 mb-4">Sobre mí</h2>
+                        <p class="fs-5">Soy estudiante en el area de tecnologías de la información y comunicación (TIC) especialiado en desarrollo multiplataforma.</p>
+                        <p class="text-secondary mb-4">He trabajado con HTML, CSS, Bootstrap y Java, Android Studio y publico mis proyectos en GitHub. Busco prácticas o un primer empleo donde pueda aprender con un equipo y aportar desde el primer día.</p>
+                        <div class="row row-cols-1 row-cols-sm-2 g-3">
+                            <div class="col"><small class="text-secondary d-block">Ubicación</small>León, Guanajuato, México</div>
+                            <div class="col"><small class="text-secondary d-block">Correo</small>donovanruiz2112@mail.com</div>
+                            <div class="col"><small class="text-secondary d-block">Idiomas</small>Español e inglés</div>
+                            <div class="col"><small class="text-secondary d-block">Disponibilidad</small>Prácticas y proyectos</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TRAYECTORIA ===== -->
+        <section id="trayectoria">
+            <div class="container">
+                <h2 class="display-4 mb-5">Trayectoria</h2>
+                <div class="row g-5">
+                    <div class="col-lg-6">
+                        <h3 class="fs-2 mb-4 texto-rosa">Educación</h3>
+                        <div class="linea-tiempo">
+                            <div class="mb-4">
+                                <small class="texto-rosa">2025 a la fecha</small>
+                                <h4 class="fs-4">Ingeniería en Tecnologias de la Información y Comunicación Digital con TSU en Desarrollo en Software Multp.</h4>
+                                <p class="text-secondary mb-0">Universidad Tecnológica de León. Programación en Java, estructuras de datos y desarrollo web.</p>
+                            </div>
+                            <div>
+                                <small class="texto-rosa">2022 a 2025</small>
+                                <h4 class="fs-4">Bachillerato con carrera técnica en Programación</h4>
+                                <p class="text-secondary mb-0">Centro de Bachillerato Tecnológico y de Servicios No.255. Primeros pasos en programación.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="fs-2 mb-4 texto-rosa">Experiencia</h3>
+                        <div class="linea-tiempo">
+                            <div class="mb-4">
+                                <small class="texto-rosa">2026</small>
+                                <h4 class="fs-4">Proyectos académicos</h4>
+                                <p class="text-secondary mb-0">Sitios web responsivos con HTML, CSS y Bootstrap, publicados con GitHub Pages.</p>
+                            </div>
+                            <div>
+                                <small class="texto-rosa">2026</small>
+                                <h4 class="fs-4">Investigación y creatividad</h4>
+                                <p class="text-secondary mb-0">Presentación sobre estructuras de datos dinámicas, creación de aplicaciones con MIT App Inventor</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PROYECTOS (CARDS) ===== -->
+        <section id="proyectos" class="fondo-gris">
+            <div class="container">
+                <h2 class="display-4 mb-2">Proyectos</h2>
+                <p class="text-secondary mb-5">Trabajos que muestran lo que sé hacer. Abre cada uno para ver los detalles.</p>
+
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <article class="card h-100 tarjeta">
+                            <img src="img/Kindish.png" class="card-img-top img-fluid" alt="Captura de la página Kindish">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h3 class="card-title">Kindish</h3>
+                                <p class="card-text text-secondary">Página web que tiene como referencia asociar a agricultores y comedores industriales.</p>
+                                <div class="mb-3"><span class="etiqueta">HTML</span><span class="etiqueta">CSS</span><span class="etiqueta">GitHub Pages</span></div>
+                                <button type="button" class="btn btn-contorno mt-auto align-self-start" data-bs-toggle="modal" data-bs-target="#modalKindish">Ver detalles</button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="card h-100 tarjeta">
+                            <img src="img/proyecto3.svg" class="card-img-top img-fluid" alt="Ventana de navegador en rosa">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h3 class="card-title">Este currículum</h3>
+                                <p class="card-text text-secondary">Página de una sola vista, responsiva, con rejilla y componentes de Bootstrap.</p>
+                                <div class="mb-3"><span class="etiqueta">Bootstrap 5</span><span class="etiqueta">CSS</span></div>
+                                <button type="button" class="btn btn-contorno mt-auto align-self-start" data-bs-toggle="modal" data-bs-target="#modalCurriculum">Ver detalles</button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== HABILIDADES ===== -->
+        <section id="habilidades">
+            <div class="container">
+                <h2 class="display-4 mb-5">Habilidades</h2>
+                <div class="row g-5">
+                    <div class="col-lg-6">
+                        <p class="mb-1">HTML</p>
+                        <div class="progress mb-4"><div class="progress-bar" style="width: 90%"></div></div>
+                        <p class="mb-1">Bootstrap</p>
+                        <div class="progress mb-4"><div class="progress-bar" style="width: 85%"></div></div>
+                        <p class="mb-1">CSS</p>
+                        <div class="progress mb-4"><div class="progress-bar" style="width: 80%"></div></div>
+                        <p class="mb-1">Java</p>
+                        <div class="progress mb-4"><div class="progress-bar" style="width: 70%"></div></div>
+                        <p class="mb-1">Git y GitHub</p>
+                        <div class="progress"><div class="progress-bar" style="width: 70%"></div></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="fs-2 texto-rosa mb-3">Herramientas</h3>
+                        <div class="mb-4"><span class="etiqueta">Visual Studio Code</span><span class="etiqueta">Java</span><span class="etiqueta">GitHub</span><span class="etiqueta">GitHub Pages</span><span class="etiqueta">Bootstrap</span></div>
+                        <h3 class="fs-2 texto-rosa mb-3">Cualidades</h3>
+                        <div><span class="etiqueta">Trabajo en equipo</span><span class="etiqueta">Aprendizaje rápido</span><span class="etiqueta">Atención al detalle</span><span class="etiqueta">Comunicación</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONTACTO ===== -->
+        <section id="contacto" class="fondo-gris">
+            <div class="container">
+                <div class="row g-5 align-items-end">
+                    <div class="col-lg-7">
+                        <h2 class="display-2 mb-4">Trabajemos <span class="texto-rosa fst-italic">juntos</span></h2>
+                        <button type="button" class="btn btn-rosa btn-lg" data-bs-toggle="modal" data-bs-target="#modalContacto">Enviar un mensaje</button>
+                    </div>
+                    <div class="col-lg-5">
+                        <a class="enlace-social" href="mailto:donovanruiz2112@gmail.com"><i class="bi bi-envelope me-2"></i>donovanruiz2112@gmail.com</a>
+                        <a class="enlace-social" href="https://github.com/Blackryss" target="_blank" rel="noopener"><i class="bi bi-github me-2"></i>GitHub</a>
+                        <a class="enlace-social" href="https://www.linkedin.com/in/donovan-alexis-ruiz-macias-43529a314/" target="_blank" rel="noopener"><i class="bi bi-linkedin me-2"></i>LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-4">
+        <div class="container d-flex flex-column flex-sm-row justify-content-between gap-2">
+            <span>Donovan Ruiz</span>
+            <a href="#inicio" class="texto-rosa text-decoration-none">Volver arriba <i class="bi bi-arrow-up"></i></a>
+            <span class="text-secondary">Hecho con Bootstrap 5, 2026</span>
+        </div>
+    </footer>
+
+    <!-- ===== MODAL: CONTACTO ===== -->
+    <div class="modal fade" id="modalContacto" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-3">Escríbeme</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- El formulario abre el programa de correo del visitante -->
+                <form action="mailto:donovanruiz2112@gmail.com" method="post" enctype="text/plain">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="correo" class="form-label">Correo</label>
+                            <input type="email" class="form-control" id="correo" name="correo" placeholder="tu@correo.com" required>
+                        </div>
+                        <div class="mb-1">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="¿En qué puedo ayudarte?" required></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-contorno" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-rosa">Enviar mensaje</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== MODAL: KINDISH ===== -->
+    <div class="modal fade" id="modalKindish" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-3">Kindish</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Página web que busca conectar a agricultores con comedores industriales.</p>
+                    <p class="mb-0"><span class="texto-rosa">Tecnologías:</span> HTML, CSS, GitHub Pages</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-contorno" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== MODAL: ESTE CURRÍCULUM ===== -->
+    <div class="modal fade" id="modalCurriculum" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-3">Este currículum</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Página de recorrido vertical con navbar fija, carrusel, tarjetas y modales. Se adapta a celular, tableta y escritorio.</p>
+                    <p class="mb-0"><span class="texto-rosa">Tecnologías:</span> Bootstrap 5, CSS</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-contorno" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

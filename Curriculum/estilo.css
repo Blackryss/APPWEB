@@ -1,0 +1,82 @@
+/* ===== Colores (cámbialos aquí y se actualiza toda la página) ===== */
+:root {
+  --rosa: #f7c6d9;
+  --gris-oscuro: #120e10;
+  --borde: #2b2226;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+body { background-color: #000; font-family: "DM Sans", sans-serif; }
+
+h1, h2, h3, .navbar-brand { font-family: "Instrument Serif", serif; font-weight: 400; }
+
+.texto-rosa { color: var(--rosa); }
+.fondo-gris { background-color: var(--gris-oscuro); }
+
+/* ===== Navbar ===== */
+.navbar { background-color: #000; border-bottom: 1px solid var(--borde); }
+.navbar-brand { color: var(--rosa) !important; font-size: 1.8rem; }
+.nav-link:hover, .nav-link.active { color: var(--rosa) !important; }
+
+/* ===== Botones ===== */
+.btn-rosa { background-color: var(--rosa); color: #000; border-radius: 50rem; padding: .6rem 1.5rem; transition: transform .2s; }
+.btn-rosa:hover { background-color: #ffe6ef; color: #000; transform: translateY(-3px); }
+.btn-contorno { border: 1px solid var(--rosa); color: var(--rosa); border-radius: 50rem; padding: .6rem 1.5rem; transition: background-color .2s, color .2s; }
+.btn-contorno:hover { background-color: var(--rosa); color: #000; }
+
+/* ===== Hero ===== */
+#inicio { min-height: 100vh; padding-top: 100px; display: flex; align-items: center; }
+.hero-nombre { font-size: clamp(3.5rem, 10vw, 7rem); line-height: 1; }
+
+/* Animación 1: el contenido del hero aparece subiendo */
+.aparecer { animation: aparecer 1s ease both; }
+.aparecer.retraso { animation-delay: .4s; }
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.carousel { border: 1px solid var(--rosa); border-radius: 1rem; overflow: hidden;}
+
+.carousel-caption {
+  color: #ffe6ef;
+  position: static;          /* ya no flota sobre la imagen */
+  background-color: var(--gris-oscuro);
+  text-align: left;
+  padding: 1.2rem 3.5rem 3rem; /* espacio a los lados para las flechas y abajo para los puntitos */
+}
+.carousel-caption h3 { color: var(--rosa); margin-bottom: .2rem; }
+.carousel-caption p { margin-bottom: 0; }
+
+/* ===== Secciones ===== */
+section { padding: 5rem 0; }
+.foto-perfil { border-radius: 1rem; border: 1px solid var(--borde); }
+
+/* Línea de tiempo sencilla */
+.linea-tiempo { border-left: 2px solid var(--rosa); padding-left: 1.5rem; }
+
+/* ===== Tarjetas ===== */
+.tarjeta { background-color: var(--gris-oscuro); border: 1px solid var(--borde); border-radius: 1rem; overflow: hidden; transition: transform .3s, border-color .3s; }
+/* Animación 2: la tarjeta se levanta al pasar el mouse */
+.tarjeta:hover { transform: translateY(-8px); border-color: var(--rosa); }
+
+.etiqueta { display: inline-block; font-size: .8rem; color: var(--rosa); border: 1px solid var(--borde); border-radius: 50rem; padding: .15rem .7rem; margin: 0 .3rem .3rem 0; }
+
+/* Barras de progreso de Bootstrap en rosa */
+.progress { background-color: var(--borde); height: 8px; }
+.progress-bar { background-color: var(--rosa); }
+
+/* ===== Modales ===== */
+.modal-content { background-color: var(--gris-oscuro); border: 1px solid var(--rosa); }
+
+/* ===== Contacto y pie ===== */
+.enlace-social { display: block; color: #fff; text-decoration: none; padding: .8rem 0; border-bottom: 1px solid var(--borde); transition: color .2s, padding-left .2s; }
+.enlace-social:hover { color: var(--rosa); padding-left: .5rem; }
+footer { border-top: 1px solid var(--borde); }
+
+/* Respeta a quien prefiere menos movimiento */
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
+
