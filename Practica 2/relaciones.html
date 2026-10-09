@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css"/>
+    <title>Relaciones</title>
+</head>
+<body>
+
+    <main>
+        <section id="principal">
+        <h1 id="titulo">Relaciones</h1>
+
+            <section id="section-1">
+                <section class="secundario">
+                    <article class="articulo">
+                  <form name="datos_relacion" method="post" action="#">
+                    <fieldset>
+                        <legend>Datos de Registro:</legend>
+                        <article id="registro">
+                            <label>Fecha de registro:</label>
+                            <input type="date" id="fecha"/><br>
+                        </article>
+                    </fieldset>
+                    <fieldset id="datos_relacion">
+                        <legend>Relación corredor - escudería - auto:</legend>
+                        <article id="otros_datos">
+                            <article>
+                                <label>Corredor: </label>
+                                <select id="corredor">
+                                    <option value=""></option>
+                                    <option value="1">Corredor 1</option>
+                                    <option value="2">Corredor 2</option>
+                                    <option value="3">Corredor 3</option>
+                                </select><br>
+                            </article>
+                            <article>
+                                <label>Escudería: </label>
+                                <select id="escuderia">
+                                    <option value=""></option>
+                                    <option value="FER">Ferrari</option>
+                                    <option value="MER">Mercedes</option>
+                                    <option value="RBR">Red Bull Racing</option>
+                                    <option value="MCL">McLaren</option>
+                                    <option value="AST">Aston Martin</option>
+                                </select><br>
+                            </article>
+                            <article>
+                                <label>Auto: </label>
+                                <select id="auto">
+                                    <option value=""></option>
+                                    <option value="A1">Auto 1</option>
+                                    <option value="A2">Auto 2</option>
+                                    <option value="A3">Auto 3</option>
+                                </select><br>
+                            </article>
+                            <article id="tipo_rel">
+                                <label>Tipo de relación:</label>
+                                <input type="radio" name="rel" value="T"/>Titular
+                                <input type="radio" name="rel" value="R"/>Reserva
+                                <input type="radio" name="rel" value="P"/>Pruebas
+                            </article>
+                        </article>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Contrato</legend>
+                        <article>
+                            <label>Inicio: </label>
+                            <input type="date" id="inicio"/><br>
+                        </article>
+                        <article>
+                            <label>Fin: </label>
+                            <input type="date" id="fin"/><br>
+                        </article>
+                        <article>
+                            <label>Duración (años): </label>
+                            <input type="number" id="duracion" min="1" max="10"/><br>
+                        </article>
+                        <article>
+                            <input type="checkbox" id="activo" checked/>
+                            <label for="activo">Relación activa</label>
+                        </article>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Generalidades </legend>
+                        <article>
+                            <label>Comentarios: </label>
+                            <textarea cols="50" rows="10" id="comms"></textarea>
+                        </article>
+                    </fieldset>
+                    <button type="button" id="boton" onclick="mi_metodoRelaciones()">Registrar</button>
+                  </form>
+                    </article>
+                </section>
+            </section>
+
+            <aside id="menu">
+                <h3>MENU</h3>
+                    <ol>
+                        <li class="opmnu"><a href="home.html">Home</a></li>
+                        <li class="opmnu"><a href="autos.html">Autos</a></li>
+                        <li class="opmnu"><a href="escuderia.html">Escudería</a></li>
+                        <li class="opmnu"><a href="corredor.html">Corredor</a></li>
+                        <li class="opmnu"><a href="relaciones.html">Relaciones</a></li>
+                    </ol>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <article class="nm">Donovan Alexis Ruiz Macias</article>
+        <article class="gpo">LDSM405</article>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

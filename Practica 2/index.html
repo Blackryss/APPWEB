@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prácticas - Donovan Alexis Ruiz Macias</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: serif;
+            background-color: blanchedalmond;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 10px 10px;
+        }
+
+        header h1 { margin: 0 0 8px; }
+        header p  { margin: 0; font-size: 1.1em; }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            gap: 20px;
+            padding: 30px 10px;
+        }
+
+        .practica {
+            display: block;
+            width: 260px;
+            padding: 40px 20px;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+            font-size: 1.3em;
+            background-color: #A56F63;
+            border-radius: 5px;
+        }
+
+        .practica:hover { background-color: #D99B7F; }
+
+        .practica span {
+            display: block;
+            margin-top: 8px;
+            font-size: 0.7em;
+        }
+
+        footer {
+            display: flex;
+            flex-wrap: wrap;
+            min-height: 80px;
+            background-color: #A56F63;
+            border-radius: 5px;
+        }
+
+        .nm, .gpo {
+            background-color: #D99B7F;
+            margin: 3vh;
+            padding: 2vh;
+            border-radius: 5px;
+        }
+
+        .nm  { margin-right: auto; }
+        .gpo { text-align: right; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Prácticas</h1>
+        <p>Donovan Alexis Ruiz Macias   Grupo LDSM405</p>
+    </header>
+
+    <main>
+        <a class="practica" >Práctica 1<span>...</span></a>
+        <a class="practica" href="home.html">Práctica 2<span>Sitio de Fórmula 1</span></a>
+        <a class="practica" href="Curriculum/curriculum.html">Práctica 3<span>Curriculum</span></a>
+    </main>
+
+    <footer>
+        <article class="nm">Donovan Alexis Ruiz Macias</article>
+        <article class="gpo">LDSM405</article>
+    </footer>
+
+</body>
+</html>
